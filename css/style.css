@@ -1,0 +1,619 @@
+body
+{
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+h1,h2,h3,h4,h5 .lead{font-family: 'Headland One', serif;font-size: 20px;}
+
+/*start mobile media*/
+@media (max-width:767px) /*at mobile*/
+{
+    .navbar-inverse .navbar-nav > li > a
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .subscribe .form-control
+    {
+        margin: 20px auto;
+    }
+    
+    .footer .imgwork
+    {
+        text-align: center;
+    }
+    
+}
+
+/*end mobile media*/
+
+/************************** start toolbox **************************/
+
+.option-box
+{
+  position: fixed;
+    top: 100px;
+    left: 0;
+    z-index:9999;
+}
+.option-box .color-option
+{
+    float: left;
+    background: #333;
+    color: #FFF;
+    padding: 10px;
+    width: 200px;
+    border: 3px solid black;
+    display: none;
+}
+.option-box .color-option ul li
+{
+    width: 20px;
+    height: 20px;
+    /*background: powderblue;*/
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 3px;
+}
+.option-box .gear-div
+{
+    padding: 5px;
+    background: black;
+    color: #fff;
+    cursor:pointer;
+    float: left;
+}
+/************************** end toolbox ****************************/
+
+/************************** start navbar **************************/
+
+/* main navbar */
+
+.navbar { min-height: 60px;}
+
+/* navbar brand (logo) */
+
+.navbar-inverse .navbar-brand {
+    padding: 30px 30px;
+    font-size: 30px;
+    line-height: 5px;
+    /*color:powderblue;*/
+    background: rgba(2,2,2,0.2);
+}
+
+/* navbar link */
+.navbar-inverse .navbar-nav > li > a
+{
+    /*color: #bbb;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+/* dropdown menu */
+.dropdown-menu { /*background-color: #333*/; min-width: 200px;}
+.navbar-right .dropdown-menu { left:0; right: auto;}
+.dropdown-menu .divider {height: .5px;} 
+
+.dropdown-menu > li > a {
+    /*color: #fff;*/
+    padding: 6px 20px;
+    -webkit-transition: padding 0.4s ease-in-out;
+    -moz-transition: padding 0.4s ease-in-out;
+    -o-transition: padding 0.4s ease-in-out;
+    transition: padding 0.4s ease-in-out;
+}
+
+.dropdown-menu > li > a:hover, 
+.dropdown-menu > li > a:focus 
+{/*color: black;*/ padding-left: 28px;}
+
+/* navbar toggle(mobile) */
+.navbar-toggle { margin-top: 14px;}
+
+/************************** end navbar **************************/
+
+/************************* start carousel ***********************/
+
+.carousel-caption {
+    position: absolute;
+    bottom: 73px;
+    background-color: rgba(3,3,3,0.4);
+    padding-right: 20px;
+    padding-left: 20px;
+    color: yellow;
+}
+
+.carousel-inner > .item > img { width: 100%}
+.btn-primary { margin-right: 5px;}
+.carousel-indicators { position: absolute; bottom: 0;}
+.carousel-indicators li { width: 12px; height: 12px; background-color: black;}
+.carousel-indicators .active { width: 14px; height: 14px; background-color: yellow;}
+
+/*************************** end carousel **************************/
+
+/*********************************
+**** end overriding bootstrap ****
+*********************************/
+
+/************************ start about section **********************/
+
+.about h1 { font-weight: bold;}
+.about span {color:black;}
+/*.about .lead { color: #888;}*/
+
+/************************** end about section **********************/
+
+/********************** start features section *********************/
+
+.features { background-color: #eee; overflow: hidden}
+.features header { width: 200px; padding-bottom: 30px; margin: 0 auto; }
+
+.features header hr {
+    height: 1px;
+    width: 70%;
+    background-color: #666;
+}
+.features h1 { margin-bottom: 40px; margin-top: 40px;}
+.features header h2 { font-weight: bold; font-size: 34px;}
+.features .feat { margin-bottom: 35px;}
+.features .feat .glyphicon { font-size: 19px; color: blue;}
+.features .feat h4 { padding-bottom: 8px;}
+.features .feat p { line-height: 1.6em}
+
+/********************** end features section ***********************/
+
+/********************** start testimonials section *********************/
+
+.testimonials h2 { font-weight: bold; padding-bottom: 30px;}
+.testimonials .lead { line-height: 1.8em; margin-bottom: 8px;}
+.testimonials span { font-size: 20px; font-weight: bold;}
+
+.testimonials .carousel-indicators {
+    position: static; /* default value */
+    margin-left: 0;
+    width: 100%;
+    padding-top: 20px;
+}
+.testimonials .carousel-indicators li {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    /*border: 2px solid blue;*/
+    text-indent: 0;
+    border-radius: 50%;
+    overflow: hidden;       /* to fix image */
+    opacity: .5;
+}
+.testimonials .carousel-indicators li.active {
+    width: 80px;
+    height: 80px;
+    background: none;
+    opacity: 1;
+}
+.testimonials .carousel-indicators li img { max-width: 100%; }
+
+/* .testimonials .carousel-inner {height: 160px;} */
+
+/********************** end testimonials section ***********************/
+
+/********************** start price section ***********************/
+.price
+{
+    background: #EEE;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.price .h1
+{
+    margin-bottom: 60px;
+}
+.price .price-box
+{
+    background: #FFF;
+    padding: 10px;
+    border: 1px solid #DDD;
+    margin-bottom: 15px;
+}
+.price .price-box h2
+{
+    margin: 5px 0 15px;
+}
+.price .price-box:hover p
+{
+    transform: scale(1.3,1.3) rotate(360deg);
+    border: 2px solid black;
+}
+.price .price-box p
+{
+    font-size: 35px;
+    font-weight: bold;
+    color: blue;
+    width: 100px;
+    height: 100px;
+    background: #F3F3F3;
+    border-radius: 50%;
+    line-height: 100px;
+    border: 2px solid white;
+    transition-duration: 0.7s;
+}
+.price .price-box ul
+{
+    line-height: 250%;
+    font-size: 18px;
+}
+.price .price-box a{margin-bottom: 5px;}
+/********************** end price section ***********************/
+
+/********************** start our team section ***********************/
+.our-team
+{
+    background: url('../img/ourteamBackground.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 600px;
+}
+.our-team .team
+{
+    background: rgba(2,2,2,0.5);
+    color: yellow;
+    min-height: 600px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    
+}
+.our-team .h1 {margin-bottom: 60px;}
+.our-team .team img {max-width: 100%;}
+.our-team .person {margin-bottom: 40px;}
+/********************** end our team section ***********************/
+
+/*------------------------- start subscribe section ----------------------*/
+.subscribe
+{
+    background: #EEE;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+.subscribe h1
+{
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: 20px;
+}
+.subscribe p {margin-bottom: 30px;}
+.subscribe .form-control
+{
+    margin-right: -5px;
+    border-radius: 0;
+    width: 300px;
+}
+.subscribe button{border-radius: 0;}
+/*------------------------- end subscribe section ----------------------*/
+
+/*------------------------- start stats section ----------------------*/
+.statistics
+{
+    background: url('../img/seo-statistics.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 400px;
+    color: white;
+    
+}
+.statistics .data
+{
+    background: rgba(1,1,1,0.5);
+    min-height: 400px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+.statistics .h1{ margin-bottom: 40px;}
+.statistics .stats
+{
+    margin-bottom: 30px;
+    transition: all 0.5s ease-in-out;
+}
+.statistics .stats:hover{color: yellow;}
+.statistics p
+{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.statistics span{font-size: 18px;}
+
+/*------------------------- end stats section ----------------------*/
+
+/*------------------------- start skills section ----------------------*/
+.our-skills
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+.our-skills .h1{margin-bottom: 70px;}
+.our-skills h3
+{
+    margin-top: 0;
+    font-weight: bold;
+}
+.our-skills .progress{height: 44px;}
+.our-skills .progress-bar
+{
+    line-height: 44px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 10px;
+}
+/*------------------------- end skills section ----------------------*/
+
+/*------------------------- start contact us section ----------------------*/
+.contact-us
+{
+    background: url(../img/contact-us.jpg) no-repeat center center fixed;
+    min-height: 300px;
+    background-size: cover;
+}
+.contact-us .fields
+{
+    background: rgba(3,3,3,0.6);
+    min-height: 300px;
+    color: yellow;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.contact-us p {margin-bottom: 40px;}
+
+.contact-us textarea{height: 108px;}
+
+.contact-us input[type="text"],
+.contact-us textarea
+{
+    /*background: rgba(82,78,78,0.5);*/
+    border: none;
+    color: black;
+}
+/*------------------------- end contact us section ----------------------*/
+
+/*------------------------- start clients section ----------------------*/
+.our-clients
+{
+    background: #EEE;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.our-clients img
+{
+    opacity: 0.4;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all 0.4s ease-in-out;
+}
+    
+.our-clients img:hover{opacity: 1;}
+/*------------------------- end clients section ----------------------*/
+
+/*------------------------- start footer section ----------------------*/
+.footer
+{
+    background: #111;
+    color: #AAA;
+    padding-top: 10px;
+    /*padding-bottom: 20px;*/
+}
+.footer h3
+{
+    /*color: #0895D1;*/
+    letter-spacing: 1px;
+    margin: 30px 0 20px;
+    
+}
+.footer a{color: #AAA;}
+.footer a:hover{color: #FFF;}
+.footer .three-columns{overflow: hidden;}
+.footer .three-columns li
+{
+    width: 33.3333%;
+    float: left;
+    padding: 5px 0;
+}
+.footer .social-list
+{
+    overflow: hidden;
+    margin: 20px 0 10px;
+}
+.footer .social-list li
+{
+    float:left;
+    margin-right: 3px;
+    opacity: 0.7;
+    transition: all 0.4s ease-in-out;
+    filter: alpha(opacity=70);
+}
+.footer .social-list li:hover{opacity: 1;}
+.footer .img-thumbnail
+{
+    background: rgba(0,0,0,0.2);
+    border: 1px solid #444;
+    margin-bottom: 5px;
+}
+.footer .copyright
+{
+    background: #333;
+    color: #AAA;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 18px;
+}
+/*------------------------- end footer section ----------------------*/
+
+/*------------------------- start loding section ----------------------*/
+.loding-overlay
+{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    color: #FFF;
+    background: #222;
+    z-index: 9999;
+    
+}
+/*start spiner*/
+.sk-fading-circle {
+  margin: 300px auto;
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+
+.sk-fading-circle .sk-circle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.sk-fading-circle .sk-circle:before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 15%;
+  height: 15%;
+  background-color: white;
+  border-radius: 100%;
+  -webkit-animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+          animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+}
+.sk-fading-circle .sk-circle2 {
+  -webkit-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+.sk-fading-circle .sk-circle3 {
+  -webkit-transform: rotate(60deg);
+      -ms-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+.sk-fading-circle .sk-circle4 {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.sk-fading-circle .sk-circle5 {
+  -webkit-transform: rotate(120deg);
+      -ms-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+.sk-fading-circle .sk-circle6 {
+  -webkit-transform: rotate(150deg);
+      -ms-transform: rotate(150deg);
+          transform: rotate(150deg);
+}
+.sk-fading-circle .sk-circle7 {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.sk-fading-circle .sk-circle8 {
+  -webkit-transform: rotate(210deg);
+      -ms-transform: rotate(210deg);
+          transform: rotate(210deg);
+}
+.sk-fading-circle .sk-circle9 {
+  -webkit-transform: rotate(240deg);
+      -ms-transform: rotate(240deg);
+          transform: rotate(240deg);
+}
+.sk-fading-circle .sk-circle10 {
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+.sk-fading-circle .sk-circle11 {
+  -webkit-transform: rotate(300deg);
+      -ms-transform: rotate(300deg);
+          transform: rotate(300deg); 
+}
+.sk-fading-circle .sk-circle12 {
+  -webkit-transform: rotate(330deg);
+      -ms-transform: rotate(330deg);
+          transform: rotate(330deg); 
+}
+.sk-fading-circle .sk-circle2:before {
+  -webkit-animation-delay: -1.1s;
+          animation-delay: -1.1s; 
+}
+.sk-fading-circle .sk-circle3:before {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s; 
+}
+.sk-fading-circle .sk-circle4:before {
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s; 
+}
+.sk-fading-circle .sk-circle5:before {
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s; 
+}
+.sk-fading-circle .sk-circle6:before {
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s; 
+}
+.sk-fading-circle .sk-circle7:before {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s; 
+}
+.sk-fading-circle .sk-circle8:before {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s; 
+}
+.sk-fading-circle .sk-circle9:before {
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+.sk-fading-circle .sk-circle10:before {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+.sk-fading-circle .sk-circle11:before {
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+.sk-fading-circle .sk-circle12:before {
+  -webkit-animation-delay: -0.1s;
+          animation-delay: -0.1s;
+}
+
+@-webkit-keyframes sk-circleFadeDelay {
+  0%, 39%, 100% { opacity: 0; }
+  40% { opacity: 1; }
+}
+
+@keyframes sk-circleFadeDelay {
+  0%, 39%, 100% { opacity: 0; }
+  40% { opacity: 1; } 
+}
+/*end spiner*/
+/*------------------------- end loding section ----------------------*/
+
+/*------------------------- start scroll section ----------------------*/
+#scroll-up
+{
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    color: #DDD;
+    background-color: #777;
+    position: fixed;
+    z-index: 9999;
+    right: 15px;
+    bottom: 10px;
+    display: none;
+}
+#scroll-up:hover{background-color: blueviolet;cursor: pointer;}
+/*------------------------- end scroll section ----------------------*/
